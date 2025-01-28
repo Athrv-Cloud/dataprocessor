@@ -6,7 +6,7 @@
 
 int main() {
     // Memory Leak 1: Allocating memory without freeing
-    char *leaked_string = malloc(100);
+    char *leaked_string = malloc(300);
     sprintf(leaked_string, "This memory will never be freed");
 
     // Memory Leak 2: Creating users without proper cleanup
@@ -14,8 +14,8 @@ int main() {
     User *user2 = create_user("Bob", 25);
 
     // Memory Leak 3: Processing data without freeing
-    int *data = generate_large_data(1000);
-    process_data(data, 1000);
+    int *data = generate_large_data(2000);
+    process_data(data, 2000);
 
     // Intentionally not freeing resources
     return 0;

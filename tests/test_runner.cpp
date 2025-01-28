@@ -90,7 +90,7 @@ TEST(DataProcessorTestGroup, GenerateLargeDataTest) {
 }
 
 TEST(DataProcessorTestGroup, ProcessDataTest) {
-    int size = 5;
+    int size = 20;
     int* data = (int*)malloc(size * sizeof(int));
     for (int i = 0; i < size; i++) {
         data[i] = i + 1;
